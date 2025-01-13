@@ -2,6 +2,9 @@
 
 to learn mlops concepts
 
+## Training
+invoke train
+
 ## Project structure
 
 The directory structure of the project looks like this:

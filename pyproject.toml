@@ -7,9 +7,8 @@ name = "dtu_mlops_git_own"
 version = "0.0.1"
 description = "to learn mlops concepts"
 authors = [
-  { name = "umairmukati", email = "your@email.com" },
+  { name = "umairmukati", email = "umairmukati@gmail.com" },
 ]
-
 keywords = ["machine learning", "MLOps"]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -19,6 +18,9 @@ readme = "README.md"
 requires-python = ">=3.11"
 dynamic = ["dependencies", "optional-dependencies"]
 
+[project.scripts]
+train = "dtu_mlops_git_own.train:main"
+
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
 
@@ -27,6 +29,7 @@ dev = {file = ['requirements_dev.txt']}
 
 [tool.ruff]
 line-length = 120
+select = ["I"]
 
 [tool.coverage.run]
 omit = ["tests/*"]

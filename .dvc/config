@@ -1,4 +1,5 @@
 [core]
-    remote = storage
-['remote "storage"']
-    url = gdrive://14-Q8j7LiDaudVNg0kMMuv4UnxcNsn34S
+    remote = remote_storage
+['remote "remote_storage"']
+    url = gs://umairmukati_mlops_data_bucket/
+    version_aware = true
